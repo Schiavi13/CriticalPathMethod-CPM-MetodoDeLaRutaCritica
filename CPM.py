@@ -61,13 +61,7 @@ def determinarEtapa(precedencias):    #Función que determina la etapa máxima a
   for i in range (0,len(precedencias)):
     lista.append(precedencias[i].etapa)
   return max(lista)
-"""
-def llenarEtapas():        #Función que llena una lista de actividades por etapas como su índice
-  actividad_nula = Actividad(0,0,0,0,0,0,0)
-  lista_etapas.append(actividad_nula)
-  for i in range len(lista_actividades)-1:
-    lista_etapas[lista_actividades[i+1].getEtapa].append(lista_actividades[i+1])
-"""
+
 def maxDuracionEtapa(etapa):    #función que determina la duración máxima de una etapa
   lista = []
   for i in range (0,len(lista_etapas[etapa])):
